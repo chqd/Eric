@@ -11,8 +11,8 @@ bot.on('ready', function () {
 
 bot.on('guildMemberAdd', member => {
     member.createDM().then(channel => {
-        return channel.send('Bienvenue sur le serveur de Alexpgm' + member.displayName)
-        console.log(`${member.displayName} à rejoind le serveur.`)
+        return channel.send('Bienvenue sur le serveur!' + member.displayName)
+        console.log(`${member.displayName} à rejoints le serveur.`)
     }).catch(console.error)
 });
 
